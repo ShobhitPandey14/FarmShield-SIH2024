@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmShield - AI Crop Disease Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .main-content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .features {
+            background-color: #e9ecef;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .features h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .feature-item {
+            margin: 20px;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+        }
+        .feature-item img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .feature-item p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .technologies {
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .technologies h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        .technologies ul {
+            list-style: none;
+        }
+        .technologies ul li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            font-size: 0.9em;
+        }
+        .contact {
+            background-color: #e9ecef;
+            padding: 40px;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FarmShield</h1>
+        <p>AI-Driven Crop Disease Prediction & Management System</p>
+    </header>
+
+    <section class="main-content">
+        <h2>Empowering Farmers with AI Solutions</h2>
+        <p>
+            At FarmShield, we are dedicated to revolutionizing the agricultural sector by integrating cutting-edge artificial intelligence into everyday farming practices. Our AI-based system allows farmers to upload images of their crops, which are then analyzed for disease detection using advanced image recognition technologies. This early detection empowers farmers to take timely preventive measures, avoiding significant crop losses and improving overall yields. Additionally, by integrating real-time weather data, our platform ensures the accuracy of predictions by factoring in environmental conditions that influence disease development. 
+            <br><br>
+            FarmShield is designed to be accessible both via mobile and web applications, making it easy for farmers in remote areas to benefit from the technology. Our system not only provides early warnings but also offers actionable insights on how to treat and manage crop diseases effectively. By reducing dependency on costly expert consultations, FarmShield helps smallholder farmers make informed decisions on disease management, leading to sustainable farming practices. The integration of real-time data enables smart recommendations for pesticide use, reducing overuse and minimizing the environmental impact.
+            <br><br>
+            As part of our mission to bring advanced technology to the hands of farmers, we continually train our AI models with updated datasets, ensuring that our system adapts to new disease outbreaks and weather patterns. We are committed to supporting farmers in maintaining the health of their crops, improving productivity, and ensuring a brighter future for agriculture.
+        </p>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Key Features</h2>
+        <div class="feature-item">
+            <img src="{{ url_for('static',filename='images (2).jpeg.jpg') }}" alt="Feature 1">
+            <p>AI-Powered Crop Disease Detection</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static',filename='First-Page.jpg') }}" alt="Feature 2">
+            <p>Real-Time Weather Data Integration</p>s
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static',filename='images.jpeg.jpg') }}" alt="Feature 3">
+            <p>Web Accessibility</p>
+        </div>
+    </section>
+
+    <section class="technologies" id="technologies">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Frontend:</strong> React.js (Web) & React Native (Mobile)</li>
+            <li><strong>Backend:</strong> Flask with Python</li>
+            <li><strong>AI Model:</strong> TensorFlow/Keras for Image Recognition</li>
+            <li><strong>Database:</strong> MongoDB/PostgreSQL</li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FarmShield. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

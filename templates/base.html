@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmShield</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="logo-nav">
+        <div class="logo"><img src="{{ url_for('static',filename='IMG_1051-removebg-preview.png') }}"></div>
+        <nav>
+            
+            <ul>
+                <li><a href="/leaflens">Leaf Lens</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="get-started">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="header-content">
+            <h1> Farmshield: Smart Crop Disease Detection and Soil Quality Improvement
+            </h1>
+            <p>FarmShield is a powerful crop detection 
+               and monitoring platform designed to protect 
+               and optimize your agricultural investments.
+                By leveraging cutting-edge artificial 
+               intelligence and computer vision technology.</p>
+
+            <p>FarmShield provides real-time insights into crop
+               health, nutrient deficiencies, soil moisture and
+               identify potential disease—all through a simple image upload.</p>
+               
+            <button><a href="/learnmore">Learn More </a></button>
+        </div>
+    </header>
+    <main>
+        <div class="statistics">
+            <div class="stat-item">
+                <strong>322+</strong>
+                <span>Farms</span>
+            </div>
+            <div class="stat-item">
+                <strong>291+</strong>
+                <span>Agents</span>
+            </div>
+            <div class="stat-item">
+                <strong>41+</strong>
+                <span>Companies</span>
+            </div>
+            <div class="stat-item">
+                <strong>139+</strong>
+                <span>Suppliers</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FarmShield. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</div>
+</body>
+</html>
