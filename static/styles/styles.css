@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F28705;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ header {
+    background-color: #F28705;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+} 
+.logo{
+    display: flex;
+    justify-content: left;
+    margin-top: -50px;
+    height: 300px;
+    width: 300px;
+} 
+.logo-nav{
+    display:flex;
+    justify-content:space-between;
+    margin: auto;
+    height: 200px;
+}
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    transition: transform 1s ease; /* Smooth transition for moving elements */
+    margin-top: -100px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li:hover {
+    transform: translateY(-20px); /* Move the entire nav upwards on hover */
+}
+
+.get-started {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-content {
+    margin-top: auto;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFD5A5;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.get-started:hover {
+    background-color: #333;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+.statistics:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
